@@ -18,10 +18,10 @@
 
 
 	<!-- Define Spring MVC view resolver -->
-		<bean
+	<bean
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-		  <property name="prefix" value="/WEB-INF/view/" />
-		  <property name="suffix" value=".jsp" />
+		<property name="prefix" value="/WEB-INF/view/" />
+		<property name="suffix" value=".jsp" />
 	</bean>
 
 	<bean
@@ -33,7 +33,7 @@
 			value="jdbc:mysql://localhost:3306/lms?serverTimezone=UTC"></property>
 		<property name="username" value="root"></property>
 		<property name="password" value="root12345!"></property>
-		
+
 	</bean>
 
 	<bean id="sessionFactory"

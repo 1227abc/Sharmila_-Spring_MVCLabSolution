@@ -8,12 +8,13 @@ import com.greatLearning.studentManagement.entity.Student;
 
 @Service
 public interface StudentService {
-	
-	
+
 	public List<Student> findAll();
+
 	public Student findById(int id);
-	public void save (Student stu);
+
+	public void save(Student stu);
+
 	public void deleteById(int id);
-	
 
 }

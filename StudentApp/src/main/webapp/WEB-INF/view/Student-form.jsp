@@ -41,7 +41,7 @@
 
 			</div>
 
-			
+
 			<div class="form-inline">
 
 				<input type="text" name="department" value="${Student.department}"

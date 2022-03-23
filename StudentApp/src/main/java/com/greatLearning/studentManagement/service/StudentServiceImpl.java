@@ -2,7 +2,6 @@ package com.greatLearning.studentManagement.service;
 
 import java.util.List;
 
-
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,12 +9,11 @@ import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 import com.greatLearning.studentManagement.entity.Student;
 
-
 @Repository
 public class StudentServiceImpl implements StudentService {
 	private SessionFactory sessionfactory;
 	private Session session;
-	
+
 	@Autowired
 	public StudentServiceImpl(SessionFactory sessionFactory) {
 		this.session = sessionFactory.openSession();
@@ -49,8 +47,5 @@ public class StudentServiceImpl implements StudentService {
 		session.getTransaction().commit();
 
 	}
-	
-
-	
 
 }

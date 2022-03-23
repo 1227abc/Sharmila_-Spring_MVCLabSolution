@@ -1,7 +1,5 @@
 package com.greatLearning.studentManagement.controller;
 
-
-
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,15 +12,12 @@ import org.springframework.web.bind.annotation.RequestParam;
 import com.greatLearning.studentManagement.entity.Student;
 import com.greatLearning.studentManagement.service.StudentService;
 
-
 @Controller
 @RequestMapping("/student")
 public class StudentController {
 
 	@Autowired
 	private StudentService studentService;
-
-	
 
 	@RequestMapping("/list")
 	public String listBooks(Model theModel) {
@@ -44,8 +39,7 @@ public class StudentController {
 		Student theStudent = new Student();
 
 		theModel.addAttribute("Student", theStudent);
-		
-		
+
 		return "Student-form";
 	}
 
@@ -81,7 +75,6 @@ public class StudentController {
 
 		// use a redirect to prevent duplicate submissions
 		return "redirect:/student/list";
-		
 
 	}
 
